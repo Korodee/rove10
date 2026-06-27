@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "FX trading",
     "asset management",
   ],
+  icons: {
+    icon: "/images/favicon.svg",
+    shortcut: "/images/favicon.svg",
+    apple: "/images/favicon.svg",
+  },
 };
 
 export default function RootLayout({
