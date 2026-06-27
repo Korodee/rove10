@@ -39,7 +39,7 @@ export default function Hero() {
               </Button>
               <Link
                 href="/insights"
-                className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-tertiary"
+                className="group inline-flex items-center gap-1.5 text-sm font-semibold text-tertiary transition-colors hover:text-tertiary"
               >
                 View Market Insights
                 <ArrowRight
