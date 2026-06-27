@@ -9,9 +9,13 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 
 const stats = [
   { value: "$1.4B+", label: "Assets Under Management" },
-  { value: "$200M", label: "Fee-bearing capital" },
+  {
+    value: "$200M",
+    label: "Fee-bearing capital",
+    mobileLines: ["Fee-bearing", "capital"],
+  },
   { value: "40+", label: "Countries" },
-];
+] as const;
 
 export default function Hero() {
   return (
@@ -52,7 +56,18 @@ export default function Hero() {
                     {stat.value}
                   </p>
                   <p className="mt-1.5 max-w-xs text-xs leading-snug text-secondary md:text-sm">
-                    {stat.label}
+                    {"mobileLines" in stat ? (
+                      <>
+                        <span className="md:hidden">
+                          {stat.mobileLines[0]}
+                          <br />
+                          {stat.mobileLines[1]}
+                        </span>
+                        <span className="hidden md:inline">{stat.label}</span>
+                      </>
+                    ) : (
+                      stat.label
+                    )}
                   </p>
                 </div>
               ))}

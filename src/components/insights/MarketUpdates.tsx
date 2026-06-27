@@ -6,6 +6,7 @@ import Container from "@/components/shared/Container";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import InsightThumbnail from "@/components/insights/InsightThumbnail";
 import InsightPagination from "@/components/insights/InsightPagination";
+import InsightsSectionHeader from "@/components/insights/InsightsSectionHeader";
 import { useInsightsTab } from "@/components/insights/InsightsTabContext";
 import { usePaginatedItems } from "@/hooks/usePaginatedItems";
 import { marketUpdates } from "@/data/insights";
@@ -14,22 +15,6 @@ import { cn } from "@/lib/utils";
 
 const FILTERED_PAGE_SIZE = 8;
 const FILTERED_ITEM_COUNT = 16;
-
-function SectionHeader({ title }: { title: string }) {
-  return (
-    <div className="flex items-center justify-between gap-4">
-      <h2 className="text-2xl font-extrabold text-textDark md:text-[2rem]">
-        {title}
-      </h2>
-      <Link
-        href="/insights"
-        className="shrink-0 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
-      >
-        See all
-      </Link>
-    </div>
-  );
-}
 
 export default function MarketUpdates() {
   const { showMarketUpdates, activeTab, isOverviewTab } = useInsightsTab();
@@ -64,7 +49,7 @@ export default function MarketUpdates() {
       <Container>
         {isOverviewTab && (
           <AnimatedSection>
-            <SectionHeader title="Market Updates" />
+            <InsightsSectionHeader title="Market Updates" tab="Market Updates" />
           </AnimatedSection>
         )}
 

@@ -8,7 +8,7 @@ export default function InsightTabs() {
   const { activeTab, setActiveTab } = useInsightsTab();
 
   return (
-    <section className="bg-[#FFF8F1]">
+    <section className="bg-[#FFF8F1]" id="insight-tabs">
       <div className="scrollbar-none overflow-x-auto md:overflow-x-visible">
         <div className="flex h-14 w-max min-w-full items-stretch md:h-16">
           <div

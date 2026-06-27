@@ -11,6 +11,7 @@ import AnimatedSection, {
 } from "@/components/shared/AnimatedSection";
 import InsightThumbnail from "@/components/insights/InsightThumbnail";
 import InsightPagination from "@/components/insights/InsightPagination";
+import InsightsSectionHeader from "@/components/insights/InsightsSectionHeader";
 import { useInsightsTab } from "@/components/insights/InsightsTabContext";
 import { usePaginatedItems } from "@/hooks/usePaginatedItems";
 import {
@@ -23,22 +24,6 @@ import { expandItemsForPagination } from "@/lib/expandItems";
 
 const FILTERED_PAGE_SIZE = 8;
 const FILTERED_ITEM_COUNT = 16;
-
-function SectionHeader({ title }: { title: string }) {
-  return (
-    <div className="flex items-center justify-between gap-4">
-      <h2 className="text-2xl font-extrabold text-textDark md:text-[2rem]">
-        {title}
-      </h2>
-      <Link
-        href="/insights"
-        className="shrink-0 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
-      >
-        See all
-      </Link>
-    </div>
-  );
-}
 
 function RoveNewsCard({ article }: { article: InsightArticle }) {
   return (
@@ -124,7 +109,7 @@ export default function RoveNews() {
     <section className="section-padding">
       <Container>
         <AnimatedSection>
-          <SectionHeader title="Rove10 News" />
+          <InsightsSectionHeader title="Rove10 News" tab="Rove10 News" />
         </AnimatedSection>
 
         <div className="mt-8 grid gap-10 lg:mt-10 lg:grid-cols-[1.4fr_1fr] lg:gap-14 xl:gap-20">

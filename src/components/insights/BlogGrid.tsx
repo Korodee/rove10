@@ -11,6 +11,7 @@ import AnimatedSection, {
 } from "@/components/shared/AnimatedSection";
 import InsightThumbnail from "@/components/insights/InsightThumbnail";
 import InsightPagination from "@/components/insights/InsightPagination";
+import InsightsSectionHeader from "@/components/insights/InsightsSectionHeader";
 import { useInsightsTab } from "@/components/insights/InsightsTabContext";
 import { usePaginatedItems } from "@/hooks/usePaginatedItems";
 import { blogPosts, type InsightArticle } from "@/data/insights";
@@ -91,9 +92,7 @@ export default function BlogGrid() {
       <Container>
         {isOverviewTab && (
           <AnimatedSection>
-            <h2 className="text-2xl font-bold text-textDark md:text-3xl">
-              Blog Posts
-            </h2>
+            <InsightsSectionHeader title="Blog Posts" tab="Blogs" />
           </AnimatedSection>
         )}
 
