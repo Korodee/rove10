@@ -45,7 +45,7 @@ function ServiceTextBlock({ service }: { service: ServiceCard }) {
           {service.title}
         </h3>
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-muted md:text-[15px]">
+      <p className="mt-3 text-sm leading-relaxed text-secondary font-[700] md:text-[15px]">
         {service.description}
       </p>
       <Link

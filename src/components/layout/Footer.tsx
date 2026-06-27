@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowUpRight,
@@ -44,7 +45,7 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,340px)_1fr] lg:gap-16 xl:grid-cols-[minmax(0,380px)_1fr] xl:gap-24">
           <div>
             <Logo />
-            <p className="mt-5 max-w-xs text-[15px] font-medium leading-relaxed text-bodyText md:mt-6">
+            <p className="mt-5 max-w-xs text-[15px] font-medium leading-relaxed text-secondary md:mt-6">
               Subscribe to our newsletter for weekly insights for smarter
               decisions.
             </p>
@@ -137,6 +138,20 @@ export default function Footer() {
           </div>
         </div>
       </Container>
+
+      <div
+        className="pointer-events-none w-full select-none overflow-hidden px-5 pb-4 pt-2 md:px-8 md:pb-6"
+        aria-hidden
+      >
+        <Image
+          src="/images/footer-logo.png"
+          alt=""
+          width={2880}
+          height={665}
+          className="mx-auto h-auto w-full min-w-0 max-w-[1400px] opacity-[0.55]"
+          sizes="100vw"
+        />
+      </div>
     </footer>
   );
 }

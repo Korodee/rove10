@@ -19,7 +19,7 @@ export default function AboutHero() {
           <h1 className="text-[2rem] font-extrabold leading-[1.12] tracking-tight text-textDark md:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
             Building Confidence Through Smarter Investment Decisions
           </h1>
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-muted md:mt-6 md:text-[17px]">
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-secondary md:mt-6 md:text-[17px]">
             We help individuals, businesses, and institutions navigate financial
             markets with disciplined investment strategies, market expertise, and
             a long-term commitment to creating sustainable value.

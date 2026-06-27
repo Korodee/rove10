@@ -29,10 +29,10 @@ export default function ServiceBenefits() {
                 <motion.article
                   whileHover={{ y: -4 }}
                   transition={{ duration: 0.25 }}
-                  className="relative rounded-[28px] px-6 pb-10 pt-16 text-center md:px-7 md:pb-12 md:pt-[4.5rem]"
+                  className="group relative rounded-[28px] px-6 pb-10 pt-16 text-center md:px-7 md:pb-12 md:pt-[4.5rem]"
                   style={{ backgroundColor: benefit.backgroundColor }}
                 >
-                  <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 transition-transform duration-700 ease-in-out group-hover:rotate-[360deg]">
                     <Image
                       src={benefit.badge}
                       alt=""

@@ -15,12 +15,12 @@ export default function AboutMission() {
               Our Mission
             </h2>
             <div>
-              <p className="text-base leading-relaxed text-muted md:text-[17px]">
+              <p className="text-base leading-relaxed text-secondary md:text-[17px]">
                 Our Mission is to provide innovative, secure, and seamless
                 financial services that empower individuals and businesses to
                 achieve their financial goals.
               </p>
-              <p className="mt-5 text-base leading-relaxed text-muted md:mt-6 md:text-[17px]">
+              <p className="mt-5 text-base leading-relaxed text-secondary md:mt-6 md:text-[17px]">
                 We deliver structured investment solutions designed to help
                 individuals and businesses navigate complex financial markets
                 with clarity, manage risk effectively, and build long-term value

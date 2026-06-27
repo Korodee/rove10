@@ -23,7 +23,7 @@ export default function CTASection() {
                 <h2 className="text-3xl font-extrabold leading-tight text-textDark md:text-4xl">
                   Start building a stronger financial future
                 </h2>
-                <p className="mt-4 max-w-md text-base leading-relaxed text-muted md:text-[17px]">
+                <p className="mt-4 max-w-md text-base leading-relaxed text-secondary md:text-[17px]">
                   Access expert-driven strategies and investment solutions
                   designed for long-term growth.
                 </p>

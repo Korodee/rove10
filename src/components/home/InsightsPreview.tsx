@@ -34,7 +34,7 @@ function InsightCard({
         <h3 className="text-lg font-bold leading-snug text-textDark md:text-xl">
           {card.title}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-muted md:text-[15px]">
+        <p className="mt-3 text-sm leading-relaxed text-secondary md:text-[15px]">
           {card.description}
         </p>
         <Link

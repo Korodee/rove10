@@ -60,7 +60,7 @@ function RoveNewsCard({ article }: { article: InsightArticle }) {
         <h3 className="mt-2 text-base font-bold leading-snug text-textDark">
           {article.title}
         </h3>
-        <p className="mt-2 flex-1 text-xs leading-relaxed text-muted">
+        <p className="mt-2 flex-1 text-xs leading-relaxed text-secondary">
           {article.description}
         </p>
         <Link

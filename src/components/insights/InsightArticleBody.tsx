@@ -65,7 +65,7 @@ export default function InsightArticleBody({ article }: InsightArticleBodyProps)
                     {section.paragraphs.map((paragraph, paragraphIndex) => (
                       <p
                         key={paragraphIndex}
-                        className="text-base leading-relaxed text-bodyText md:text-[17px]"
+                        className="text-base leading-relaxed text-secondary md:text-[17px]"
                       >
                         {paragraph}
                       </p>
@@ -91,7 +91,7 @@ export default function InsightArticleBody({ article }: InsightArticleBodyProps)
                 {article.body.map((paragraph, index) => (
                   <p
                     key={index}
-                    className="text-base leading-relaxed text-bodyText md:text-[17px]"
+                    className="text-base leading-relaxed text-secondary md:text-[17px]"
                   >
                     {paragraph}
                   </p>

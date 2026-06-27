@@ -13,7 +13,9 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <ServicesHero />
+      <div className="flex min-h-[calc(100dvh-var(--header-height))] flex-col">
+        <ServicesHero />
+      </div>
       <ServicesGrid />
       <WhyUseRove />
       <ServiceBenefits />

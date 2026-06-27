@@ -9,7 +9,7 @@ import { faqItems } from "@/data/faq";
 import { cn } from "@/lib/utils";
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(4);
+  const [openIndex, setOpenIndex] = useState(-1);
 
   return (
     <section className="section-padding bg-white">
@@ -52,7 +52,7 @@ export default function FAQSection() {
                           transition={{ duration: 0.25 }}
                           className="overflow-hidden"
                         >
-                          <p className="pt-4 text-sm leading-relaxed text-muted">
+                          <p className="pt-4 text-sm leading-relaxed text-secondary">
                             {item.answer}
                           </p>
                         </motion.div>

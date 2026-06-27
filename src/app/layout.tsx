@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Rove10 | Your Reliable Compass to Financial Wealth",
@@ -30,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en">
       <body className="min-h-screen font-sans antialiased">
         <Navbar />
         <main>{children}</main>

@@ -9,7 +9,7 @@ import CTASection from "@/components/home/CTASection";
 export default function HomePage() {
   return (
     <>
-      <div className="flex min-h-[calc(100dvh-var(--header-height))] flex-col bg-cream">
+      <div className="flex min-h-[calc(100dvh-var(--header-height))] flex-col">
         <Hero />
         <MarketTicker />
       </div>

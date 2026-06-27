@@ -49,7 +49,7 @@ function PerformanceContent({
           <br />
           Driven by performance.
         </h2>
-        <p className="text-base leading-relaxed text-muted lg:max-w-md lg:pt-1 md:text-[17px]">
+        <p className="text-base leading-relaxed text-secondary lg:max-w-md lg:pt-1 md:text-[17px]">
           We deliver structured, insight-led investment solutions built for
           consistency, security, and long-term growth.
         </p>
@@ -70,7 +70,7 @@ function PerformanceContent({
               <h3 className="text-2xl font-bold text-textDark md:text-3xl lg:text-[2rem]">
                 {feature.title}
               </h3>
-              <p className="mt-4 max-w-md text-base leading-relaxed text-muted md:text-[17px]">
+              <p className="mt-4 max-w-md text-base leading-relaxed text-secondary md:text-[17px]">
                 {feature.description}
               </p>
               <div className="mt-6">
@@ -152,7 +152,7 @@ function MobilePerformanceSection() {
             <br />
             Driven by performance.
           </h2>
-          <p className="text-base leading-relaxed text-muted">
+          <p className="text-base leading-relaxed text-secondary">
             We deliver structured, insight-led investment solutions built for
             consistency, security, and long-term growth.
           </p>
@@ -168,7 +168,7 @@ function MobilePerformanceSection() {
             >
               <StepIndicator activeIndex={index} />
               <h3 className="text-2xl font-bold text-textDark">{feature.title}</h3>
-              <p className="mt-4 text-base leading-relaxed text-muted">
+              <p className="mt-4 text-base leading-relaxed text-secondary">
                 {feature.description}
               </p>
               <div className="mt-6">

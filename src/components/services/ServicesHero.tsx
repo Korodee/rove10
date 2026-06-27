@@ -1,22 +1,22 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Button from "@/components/shared/Button";
 import Container from "@/components/shared/Container";
+import HeroImage from "@/components/shared/HeroImage";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function ServicesHero() {
   return (
-    <section className="overflow-hidden bg-white pt-8 md:pt-10">
-      <Container className="pb-12 md:pb-16">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <AnimatedSection>
-            <h1 className="max-w-xl text-[2.25rem] font-extrabold leading-[1.1] tracking-tight text-textDark md:text-5xl lg:text-[3.25rem]">
+    <section className="relative flex flex-1 flex-col justify-center bg-white">
+      <Container className="relative z-10 py-8 md:py-10">
+        <div className="grid items-center gap-10 lg:grid-cols-3 lg:gap-14 xl:gap-20">
+          <AnimatedSection className="lg:col-span-2">
+            <h1 className="max-w-xl text-[2rem] font-extrabold leading-[1.1] tracking-tight text-textDark md:text-5xl lg:max-w-none lg:text-[3.25rem]">
               Investment solutions designed for performance and stability
             </h1>
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted md:text-[17px]">
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-secondary md:text-[17px] lg:max-w-lg">
               We offer a range of financial services tailored to help individuals
               and businesses manage risk, optimize returns, and achieve long-term
               growth.
@@ -38,23 +38,24 @@ export default function ServicesHero() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection
-            delay={0.15}
-            className="relative flex min-h-[280px] items-center justify-center lg:min-h-[420px]"
-          >
-            <div className="relative h-full min-h-[280px] w-full lg:min-h-[420px]">
-              <Image
-                src="/images/services-hero.png"
-                alt="Financial professional ready to help with your investments"
-                fill
-                className="object-contain object-center lg:object-right"
-                sizes="(max-width: 1024px) 100vw, 760px"
-                priority
-              />
-            </div>
+          <AnimatedSection delay={0.15} className="relative lg:hidden">
+            <HeroImage className="relative min-h-[280px] w-full sm:min-h-[320px] md:min-h-[380px]" />
           </AnimatedSection>
+
+          <div className="hidden lg:col-span-1 lg:block" aria-hidden />
         </div>
       </Container>
+
+      <AnimatedSection
+        delay={0.15}
+        className="pointer-events-none absolute bottom-0 right-0 top-[10%] hidden overflow-hidden lg:left-[50%] lg:block"
+      >
+        <HeroImage
+          bleed
+          className="relative h-full w-full"
+          imageClassName="object-contain object-bottom-right"
+        />
+      </AnimatedSection>
     </section>
   );
 }

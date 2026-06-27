@@ -48,7 +48,7 @@ export default function InsightArticleHero({ article }: InsightArticleHeroProps)
               {intro.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-base leading-relaxed text-bodyText md:text-[17px]"
+                  className="text-base leading-relaxed text-secondary md:text-[17px]"
                 >
                   {paragraph}
                 </p>

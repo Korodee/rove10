@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/shared/Button";
 import Container from "@/components/shared/Container";
+import HeroImage from "@/components/shared/HeroImage";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
 const stats = [
@@ -15,14 +15,14 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="flex flex-1 flex-col justify-center overflow-hidden">
-      <Container className="py-8 md:py-10">
+    <section className="relative flex flex-1 flex-col justify-center">
+      <Container className="relative z-10 py-8 md:py-10">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20">
           <AnimatedSection>
             <h1 className="max-w-xl text-[2.5rem] font-extrabold leading-[1.08] tracking-tight text-textDark md:text-5xl lg:text-[3.5rem]">
               Your Reliable Compass to Financial Wealth
             </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-muted md:text-[17px]">
+            <p className="mt-6 max-w-md text-base leading-relaxed text-secondary md:text-[17px]">
               Empowering you to take control and achieve financial freedom. One
               transaction at a time.
             </p>
@@ -59,20 +59,24 @@ export default function Hero() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.15} className="relative flex h-full min-h-[280px] items-center lg:min-h-[420px]">
-            <div className="relative h-full min-h-[280px] w-full lg:min-h-[420px]">
-              <Image
-                src="/images/hero.png"
-                alt="Professionals reviewing financial insights together"
-                fill
-                className="object-contain object-right"
-                sizes="(max-width: 1024px) 100vw, 600px"
-                priority
-              />
-            </div>
+          <AnimatedSection delay={0.15} className="relative lg:hidden">
+            <HeroImage className="relative min-h-[300px] w-full md:min-h-[360px]" />
           </AnimatedSection>
+
+          <div className="hidden lg:block" aria-hidden />
         </div>
       </Container>
+
+      <AnimatedSection
+        delay={0.15}
+        className="pointer-events-none absolute bottom-0 right-0 top-[10%] hidden overflow-hidden lg:left-[50%] lg:block"
+      >
+        <HeroImage
+          bleed
+          className="relative h-full w-full"
+          imageClassName="object-contain object-bottom-right"
+        />
+      </AnimatedSection>
     </section>
   );
 }

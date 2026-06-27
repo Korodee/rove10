@@ -23,6 +23,7 @@ const config: Config = {
           soft: "#F4FBF9",
         },
         textDark: "#023E38",
+        secondary: "#322B28",
         bodyText: "#2F3F3C",
         tertiary: {
           DEFAULT: "#CC5500",
@@ -36,7 +37,7 @@ const config: Config = {
         cream: "#FDFBF8",
       },
       fontFamily: {
-        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
+        sans: ['"Work Sans"', "system-ui", "sans-serif"],
       },
       maxWidth: {
         container: "1200px",

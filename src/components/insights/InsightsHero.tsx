@@ -33,7 +33,7 @@ export default function InsightsHero() {
                 <h2 className="mt-3 text-2xl font-bold leading-snug text-textDark md:text-3xl">
                   {featuredArticle.title}
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-muted">
+                <p className="mt-4 text-base leading-relaxed text-secondary">
                   {featuredArticle.description}
                 </p>
                 <Link

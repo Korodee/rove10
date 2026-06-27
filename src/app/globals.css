@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,7 @@
   html {
     scroll-behavior: smooth;
     --header-height: 4rem;
+    font-family: "Work Sans", system-ui, sans-serif;
   }
 
   @media (min-width: 768px) {
@@ -15,7 +18,7 @@
   }
 
   body {
-    @apply font-sans text-bodyText antialiased;
+    @apply font-sans text-secondary antialiased;
     background-color: #FDFBF8;
   }
 
