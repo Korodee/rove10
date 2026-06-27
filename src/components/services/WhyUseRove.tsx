@@ -30,12 +30,20 @@ export default function WhyUseRove() {
 
             <div className="mx-auto mt-10 w-full max-w-[52rem] md:mt-12 lg:mt-14">
               <Image
+                src="/images/why-use-mobile.png"
+                alt="You connect with Rove10 to build wealth"
+                width={382}
+                height={1304}
+                className="mx-auto h-auto w-[72%] max-w-[260px] object-contain sm:max-w-[320px] lg:hidden"
+                sizes="(max-width: 1024px) 300px, 0px"
+              />
+              <Image
                 src="/images/why-use.png"
                 alt="You connect with Rove10 to build wealth"
                 width={1704}
                 height={516}
-                className="h-auto w-full object-contain"
-                sizes="(max-width: 1024px) 100vw, 832px"
+                className="hidden h-auto w-full object-contain lg:block"
+                sizes="832px"
               />
             </div>
           </div>

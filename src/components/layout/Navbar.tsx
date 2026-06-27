@@ -91,17 +91,17 @@ export default function Navbar() {
                   </li>
                 ))}
                 <li className="border-t border-border pt-4">
-                  <Link
-                    href="#"
-                    className="block py-2 text-sm font-semibold text-primary"
-                  >
-                    Log In
-                  </Link>
-                </li>
-                <li>
-                  <Button href="#" className="w-full">
-                    Create Account
-                  </Button>
+                  <div className="flex items-center gap-3">
+                    <Link
+                      href="#"
+                      className="shrink-0 text-sm font-semibold text-primary"
+                    >
+                      Log In
+                    </Link>
+                    <Button href="#" className="flex-1">
+                      Create Account
+                    </Button>
+                  </div>
                 </li>
               </ul>
             </Container>
