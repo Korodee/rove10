@@ -35,7 +35,9 @@ export default function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 transition-colors duration-300",
-        showSolidBg ? "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.06)]" : "bg-transparent"
+        showSolidBg
+          ? "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.06)]"
+          : "bg-[#FFFEFD]"
       )}
     >
       <Container>

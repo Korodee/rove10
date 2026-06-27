@@ -10,7 +10,7 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function ServicesHero() {
   return (
-    <section className="relative flex flex-1 flex-col justify-center overflow-hidden bg-white lg:bg-transparent">
+    <section className="relative flex flex-1 flex-col justify-center overflow-hidden bg-white">
       <HeroBackground />
 
       <Container className="relative z-10 py-8 md:py-10">
