@@ -34,7 +34,7 @@ export default function WhyUseRove() {
                 alt="You connect with Rove10 to build wealth"
                 width={382}
                 height={1304}
-                className="mx-auto h-auto w-[72%] max-w-[260px] object-contain sm:max-w-[320px] lg:hidden"
+                className="mx-auto h-auto w-[42%] max-w-[160px] object-contain sm:max-w-[320px] lg:hidden"
                 sizes="(max-width: 1024px) 300px, 0px"
               />
               <Image
