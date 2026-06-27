@@ -61,12 +61,12 @@ export default function InsightsPreview() {
     <section className="section-padding bg-white">
       <Container>
         <AnimatedSection>
-          <div className="flex items-start justify-between gap-6">
-            <h2 className="max-w-2xl text-[1.75rem] font-extrabold leading-[1.15] tracking-tight text-textDark md:text-4xl">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+            <h2 className="min-w-0 text-[1.5rem] font-extrabold leading-[1.15] tracking-tight text-textDark sm:max-w-2xl sm:text-[1.75rem] md:text-4xl">
               Stay up to date with market trends, expert analysis, and
               investment insights.
             </h2>
-            <div className="flex shrink-0 gap-2">
+            <div className="flex gap-2 sm:hidden">
               <button
                 type="button"
                 onClick={goPrev}

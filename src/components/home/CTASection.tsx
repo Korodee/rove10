@@ -7,7 +7,7 @@ import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function CTASection() {
   return (
-    <section className="section-padding">
+    <section className="lg:section-padding">
       <Container>
         <AnimatedSection>
           <div
@@ -32,7 +32,7 @@ export default function CTASection() {
                 </div>
               </div>
 
-              <div className="relative flex items-end justify-center lg:absolute translate-y-16 lg:-translate-x-6 lg:right-6 lg:w-[52%] lg:justify-end xl:right-10">
+              <div className="relative flex translate-y-16 items-end justify-center lg:absolute lg:right-6 lg:w-[52%] lg:-translate-x-6 lg:justify-end xl:right-10">
                 <Image
                   src="/images/cta.png"
                   alt="Abstract building blocks illustration"

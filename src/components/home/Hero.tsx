@@ -51,7 +51,7 @@ export default function Hero() {
                   <p className="text-xl font-extrabold text-textDark md:text-2xl lg:text-[1.75rem]">
                     {stat.value}
                   </p>
-                  <p className="mt-1.5 text-xs leading-snug text-muted md:text-sm">
+                  <p className="mt-1.5 max-w-xs text-xs leading-snug text-secondary md:text-sm">
                     {stat.label}
                   </p>
                 </div>
@@ -59,8 +59,14 @@ export default function Hero() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.15} className="relative lg:hidden">
-            <HeroImage className="relative min-h-[300px] w-full md:min-h-[360px]" />
+          <AnimatedSection
+            delay={0.15}
+            className="relative -mx-5 w-[calc(100%+2.5rem)] md:-mx-8 md:w-[calc(100%+4rem)] lg:hidden"
+          >
+            <HeroImage
+              className="relative min-h-[300px] w-full md:min-h-[360px]"
+              imageClassName="object-contain object-bottom"
+            />
           </AnimatedSection>
 
           <div className="hidden lg:block" aria-hidden />

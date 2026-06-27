@@ -61,7 +61,7 @@ export default function MarketTicker() {
   return (
     <section className="flex h-[88px] w-full shrink-0 overflow-hidden md:h-[96px]">
       {/* Left — peach title panel */}
-      <div className="flex w-[28%] min-w-[140px] max-w-[260px] shrink-0 items-center border-r border-[#F0D4C8] bg-[#FDE6D8] px-5 md:w-[22%] md:min-w-[220px] md:max-w-[280px] md:px-8">
+      <div className="hidden min-w-[140px] w-[28%] max-w-[260px] shrink-0 items-center border-r border-[#F0D4C8] bg-[#FDE6D8] pl-10 pr-4 md:w-[22%] md:min-w-[220px] md:max-w-[280px] md:pl-14 md:pr-6 lg:flex">
         <p className="text-[13px] font-bold leading-snug text-[#2C2419] md:text-[15px] md:leading-tight">
           Global Markets,
           <br />
