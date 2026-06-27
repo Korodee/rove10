@@ -13,7 +13,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <div className="flex min-h-[calc(100dvh-var(--header-height))] flex-col">
+      <div className="flex flex-col bg-white lg:min-h-[calc(100dvh-var(--header-height))] lg:bg-transparent">
         <ServicesHero />
       </div>
       <ServicesGrid />

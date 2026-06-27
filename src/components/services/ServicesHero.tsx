@@ -5,11 +5,14 @@ import { ChevronRight } from "lucide-react";
 import Button from "@/components/shared/Button";
 import Container from "@/components/shared/Container";
 import HeroImage from "@/components/shared/HeroImage";
+import HeroBackground from "@/components/shared/HeroBackground";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
 export default function ServicesHero() {
   return (
-    <section className="relative flex flex-1 flex-col justify-center bg-white">
+    <section className="relative flex flex-1 flex-col justify-center overflow-hidden bg-white lg:bg-transparent">
+      <HeroBackground />
+
       <Container className="relative z-10 py-8 md:py-10">
         <div className="grid items-center gap-10 lg:grid-cols-3 lg:gap-14 xl:gap-20">
           <AnimatedSection className="lg:col-span-2">
@@ -48,7 +51,7 @@ export default function ServicesHero() {
 
       <AnimatedSection
         delay={0.15}
-        className="pointer-events-none absolute bottom-0 right-0 top-[10%] hidden overflow-hidden lg:left-[50%] lg:block"
+        className="pointer-events-none absolute bottom-0 right-0 top-[10%] z-[1] hidden overflow-hidden lg:left-[50%] lg:block"
       >
         <HeroImage
           bleed

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -14,6 +14,17 @@ import { cn } from "@/lib/utils";
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [solidBg, setSolidBg] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setSolidBg(window.scrollY > 10);
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const showSolidBg = solidBg || mobileOpen;
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -21,7 +32,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white backdrop-blur-sm">
+    <header
+      className={cn(
+        "sticky top-0 z-50 transition-colors duration-300",
+        showSolidBg ? "bg-white shadow-[0_1px_0_0_rgba(0,0,0,0.06)]" : "bg-transparent"
+      )}
+    >
       <Container>
         <nav className="relative grid h-16 grid-cols-[1fr_auto_1fr] items-center md:h-[72px]">
           <Logo className="justify-self-start" size="sm" />
