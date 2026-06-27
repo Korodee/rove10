@@ -14,7 +14,7 @@ import { performanceFeatures } from "@/data/services";
 import { cn } from "@/lib/utils";
 
 const STEP_COUNT = performanceFeatures.length;
-const SCROLL_HEIGHT_PER_STEP = 75; // vh per step — compact but enough room to scrub
+const SCROLL_HEIGHT_PER_STEP = 120; // vh per step — more scroll room so each slide lingers
 
 function StepIndicator({ activeIndex }: { activeIndex: number }) {
   return (

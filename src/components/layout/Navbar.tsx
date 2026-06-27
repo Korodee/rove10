@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-white backdrop-blur-sm">
       <Container>
         <nav className="relative grid h-16 grid-cols-[1fr_auto_1fr] items-center md:h-[72px]">
           <Logo className="justify-self-start" size="sm" />

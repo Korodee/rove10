@@ -15,7 +15,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-1 flex-col justify-center">
+    <section className="relative flex flex-1 flex-col justify-center bg-white">
       <Container className="relative z-10 py-8 md:py-10">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20">
           <AnimatedSection>
