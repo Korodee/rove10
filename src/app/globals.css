@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    --header-height: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      --header-height: 4.5rem;
+    }
+  }
+
+  body {
+    @apply font-sans text-bodyText antialiased;
+    background-color: #FDFBF8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-textDark;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-5 py-16 md:px-8 lg:px-10 lg:py-[80px];
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Ticker scroll animation */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-animate {
+  animation: ticker-scroll 40s linear infinite;
+  width: max-content;
+}
+
+.ticker-animate:hover {
+  animation-play-state: paused;
+}
