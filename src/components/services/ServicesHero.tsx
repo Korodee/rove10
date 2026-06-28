@@ -8,6 +8,11 @@ import HeroImage from "@/components/shared/HeroImage";
 import HeroBackground from "@/components/shared/HeroBackground";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 
+const servicesHeroImage = {
+  src: "/images/services-hero.png",
+  alt: "Classical statue representing enduring financial strength",
+};
+
 export default function ServicesHero() {
   return (
     <section className="relative flex flex-1 flex-col justify-center overflow-hidden bg-white">
@@ -41,10 +46,6 @@ export default function ServicesHero() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.15} className="relative lg:hidden">
-            <HeroImage className="relative min-h-[280px] w-full sm:min-h-[320px] md:min-h-[380px]" />
-          </AnimatedSection>
-
           <div className="hidden lg:col-span-1 lg:block" aria-hidden />
         </div>
       </Container>
@@ -54,6 +55,7 @@ export default function ServicesHero() {
         className="pointer-events-none absolute bottom-0 right-0 top-[10%] z-[1] hidden overflow-hidden lg:left-[50%] lg:block"
       >
         <HeroImage
+          {...servicesHeroImage}
           bleed
           className="relative h-full w-full"
           imageClassName="object-contain object-bottom-right"

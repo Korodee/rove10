@@ -5,17 +5,21 @@ interface HeroImageProps {
   className?: string;
   imageClassName?: string;
   bleed?: boolean;
+  src?: string;
+  alt?: string;
 }
 
 export default function HeroImage({
   className,
   imageClassName = "object-contain object-bottom md:object-bottom-right",
   bleed = false,
+  src = "/images/hero.png",
+  alt = "Professionals reviewing financial insights together",
 }: HeroImageProps) {
   const image = (
     <Image
-      src="/images/hero.png"
-      alt="Professionals reviewing financial insights together"
+      src={src}
+      alt={alt}
       fill
       className={imageClassName}
       sizes="(max-width: 1024px) 100vw, 50vw"
